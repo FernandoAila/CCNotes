@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "1e7f20c4c300d5a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "6eac0d202187251b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Vectores y Matrices.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "942e033751288667",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e3de7deadb3a159",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f5e68ddb90dfbe2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "14e3b650c27d01e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f231bd52cafc5a6d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ba2e0c03175a5af3",
+    "type": "split",
+    "children": [
+      {
+        "id": "227abde422678672",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aef3f4f50fa8a56c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Vectores y Matrices.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "82900f29e6b7cd3b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Vectores y Matrices.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0e51516bd0a02bc4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f4fb5f80f6048365",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Vectores y Matrices.md"
+              }
+            }
+          },
+          {
+            "id": "97f2fcee903123de",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "97f2fcee903123de",
+  "lastOpenFiles": [
+    "Pasted image 20220822144125.png",
+    "Pasted image 20220822145802.png",
+    "Vectores y Matrices.md"
+  ]
+}
