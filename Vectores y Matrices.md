@@ -85,5 +85,4 @@ Lo que corresponde simplemente como a una combinacion lineal de las columnas de 
 La generalizacion del productor matriz-vector es el producto matriz-matriz. Considerar las matrices $A\in\mathbb{R^{m\times n}}$ y $B\in\mathbb{R^{m\times l}}$, entocnes su producto es:
 ![[Pasted image 20220822152658.png]]
 
-En particular, podemos computar la matriz C, computando cada uno de sus vectores columna $c_i$ de la forma $$f(x)=3x+1$$
-Fin
+En particular, podemos computar la matriz C, computando cada uno de sus vectores columna $c_i$ de la forma
