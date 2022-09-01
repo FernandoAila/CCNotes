@@ -89,7 +89,7 @@ Por ejemplo, si utlilizamos una representación de punto flotante, con 2 bits pa
 ![[Pasted image 20220827165246.png]]
 
 - Se puede apreciar que la cantidad de numeros representables entre potencias de 2 es la misma, lo que tiene sentido debido a que la mantissa no cambia (solo lo hace el exponente).
-- El espaciado entre numeros representables es mayor a medida que nos movemos a la derecha de la recta  númerica, debido a lo mostrado anteriormente sobre el error. Es entonces que inevitablemente debe haber un entero que no este representado.
+- El espaciado (gap) entre numeros representables es mayor a medida que nos movemos a la derecha de la recta  númerica, debido a lo mostrado anteriormente sobre el error. Es entonces que inevitablemente debe haber un entero que no este representado. En efecto, para grandes numeros, el gap será mayor que uno, por lo que estariamos dejando un numero entero sin representar.
 Cual sería este numero?
 Recordar que el exponente es el corrimiento (shift) del punto decimal.  Si tenemos una mantissa de n bits, implica que podemos representar hasta $2^{(n+1)}$  numeros enteros sin que perdamos presicion, ya que para un exponente igual a n, el corrimiento alcanza hasta todos los numeros enteros antes de la siguiente potencia (estariamos sumando $2^0+2^1+\cdots+2^n$ a el $2^n$ del exponente), además de la potencia en si misma por que nos las da el exponente, sin embargo faltaría un bit de la mantissa para representar el numero siguiente a este como se ve en la figura:
 
@@ -108,7 +108,7 @@ Exponente: 11 bits -> $2^{11} = 2048$ numeros, es decir, $[0,1,2,\cdots, 2047 ]$
 	Se necesitan representar numeros negativos para eso  introducimos un shift que corresponde, si tenemos k bits disponibles para el exponente es:$$2^{k-1}-1$$
 Que para el caso del formato double equivale a $1023$
 		
-Esto permite trasladar los numeros enteros representables por el exponente de la siguiente forma: $$[1-shift, 2- shift, \cdots, 2^k-2]$$
+Esto permite trasladar los numeros enteros representables por el exponente de la siguiente forma: $$[1-shift, 2- shift, \cdots, 2^k-2-shift]$$
 		Dejando fuera el caso de 0 ($000\cdots000$) y $2^k-1$ ($111\cdots111$) ya que son casos especiales.
 		Que para formato double es:![[Pasted image 20220827193453.png]] y es lo que muestra el siguiente esquema: ![[Pasted image 20220828001153.png]]
 
@@ -136,6 +136,49 @@ Por lo tanto el antecesor (restar $1.000\cdots000\cdot2^{-1022}$):$$+0.111\cdots
 El numero más pequeño representable, lo obtenemos restando sucesivamente como el caso anterior, llegando a que en la mantissa tengo solo 0´s excepto en el ultimo bit.
 $$+0.000\cdots0001 \cdot 2^{-1022}$$ Lo que corresponde a $$2^{-52}\cdot2^{-1022}=2^{-1074}$$
 ## Perdida de la Importancia
+Existen casos donde al realizar operaciones númericas, como sumar, restar, multiplicar, etc. al trabajar con una cierta cantidad de bits para la representacion de punto flotante, es posible perder algunos bits de informacion debido a la regla de redondeo antes vista.
 
+
+Por ejemplo, si queremos sumar $n_1+n_2$, primero tenemos que alinear el exponente a un valor igual, por ejemplo, corriendo la coma 2 veces  hacia la izquierda de $n_1$.
 ![[Pasted image 20220824124409.png]]
+Si realizamos la suma, tenemos que:
+![[Pasted image 20220828152749.png]] 
+La regla del redondeo dice que tenemos que sumar 1 al bit 52, por lo tanto:
+![[Pasted image 20220828153522.png]]
 
+Claramente del resultado vemos que lo obtenido no es lo mismo que lo teoríco, dado que se tuvo que aplicar la regla del redondeo.
+
+Estos casos de perdidad de significancia pueden ocurrir por diferentes motivos:
+#### Números con ordenes de magnitud muy diferentes
+Por ejemplo, supongamos que queremos sumar los numeros $m_1 = 1$,$m_2=2^{-55}$ y $m_3=-1$ ![[Pasted image 20220828160801.png]]
+
+Tenemos varias formas de sumar esos numeros, por ejemplo:
+1. $(m_1+m_2)+m_3$
+2. $(m_1+m_3)+m_2$
+Claramente a simple vista el resultado es $2^{55}$
+Para saber cual algoritmo es el mejor realizamos los dos algoritmos:
+Para el primer algoritmo:
+![[Pasted image 20220828161501.png]]
+
+Donde el resultado es 0.
+
+>[!INFO] El cero en punto flotante
+> El numero $0$ puede tener 2 representaciones en punto flotante, la representación normal y la subnormal.
+>- Notación normal: $\pm0.000\cdots000\cdot2^0$>-
+>- Subnormal: $\pm0.000\cdots000\cdot2^{-1022}$
+
+Para el algoritmo 2 se tiene que:
+
+![[Pasted image 20220828163842.png]]
+
+![[Pasted image 20220828163901.png]]
+
+Cuyo resultado es $2^{55}$ y claramente el correcto.
+
+Como resumen, para evitar este caso, es recomendable sumar primero aquellos números cercanos en orden de magnitud entre sí.
+
+
+#### Cancelación Catastrofica
+Esta situacion ocurre cuando substraimos dos valores muy cercanos entre sí,  por ejemplo,  en el caso de la solución a la ecuacion cuadratica $ax^2+bx+c=0$:$$\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+Donde si $b>>> -4ac$ entonces el denominador queda en 0 y por lo tanto el resultado es 0.
+Otro caso comun es del logaritmo
