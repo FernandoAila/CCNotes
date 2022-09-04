@@ -121,7 +121,22 @@ Para esto sea la siguiente funcion $g_1(x)= -\frac{3}{2}x+\frac{5}{2}$, con *ini
 
 Claramente $g(x)$ diverge. Podemos utilizar un diagrama cobweb para analizar mejor los resultados obtenidos.
 
-![[Pasted image 20220902215807.png]]
-Podemos entender la iteracion de punto fijo, como la **interseccion** de dos funciones, $y=g(x)$ y $y=x$. Si el punto fijo existe, será la interseccion de las dos funciones, es decir en el punto, $(r,r)$.
-Esto se conecta con la busqueda de ceros, restando las dos funciones.
-Por otro lado, sea la funcion $g_2(x)=-\frac{1}{2}x+\frac{3}{2}$
+![[Pasted image 20220902225507.png]]
+Lo que claramente diverge, ya que la espiral se va alejando de la interseccion de las curvas.
+Por otro lado, sea la funcion $g_2(x)=-\frac{1}{2}x+\frac{3}{2}$, con *initial guess* 1.1, sus valores son:
+![[Pasted image 20220902230443.png]]
+
+Claramente vemos que estos valores convergen a un valor que es el 1. Su diagrama de Cobweb es:
+![[Pasted image 20220902230712.png]]
+Claramente se observa que la espiral converge al valor en cuestion.
+
+
+Podemos entender la iteracion de punto fijo, como la **interseccion** de dos funciones, $y=g(x)$ y $y=x$. Si el punto fijo existe, será la interseccion de las dos funciones, es decir en el punto, $(r,r)$. 
+Esto se conecta con la busqueda de ceros, restando las dos funciones, tal como es muesta en los dos graficos,
+
+
+
+![[Pasted image 20220902223256.png]]
+
+
+
