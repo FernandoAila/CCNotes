@@ -150,4 +150,7 @@ Analogo al teorema del valor medio donde: $$f'(c) = \frac{f(b)-f(a)}{b-a}=\frac{
 >Sea $x$ y $x_0$ numeros reales y $f(x)$ $k$ veces diferenciable en $[x, x_0]$ entonces existe un numero c entre $x$ y $x_0$ tal que:
 > ![[Pasted image 20220917215006.png]]
 
-Basicamente estamos aproximando la funcion $f(x)$  en torno al punto $x_0$ a partir de ciertos polinomios usando la llamada serie de taylor centrada en $x_0$.
+Basicamente estamos aproximando la funcion $f(x)$  en torno al vecindario del punto $x_0$ a partir de ciertos polinomios usando la llamada serie de taylor centrada en $x_0$.
+![[Pasted image 20220917220255.png]]
+
+En cadao termino la aproximacion es diferente, por ejemplo, la primera aproximacion seria una constante, luego una recta, despues una parabola, etc. Por ejemplo, estariamos utilizando los primeros 3 terminos de la serie mostrada en la imagen. Y es exacta justo en el punto $x=x_0$ y el error empieza a aumentar a medida que nos alejamos de $x_0$.
