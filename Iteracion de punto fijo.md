@@ -145,3 +145,9 @@ Es decir, que una IPF puede diverger si utilizamos una *initial guess* equivocad
 
 Analogo al teorema del valor medio donde: $$f'(c) = \frac{f(b)-f(a)}{b-a}=\frac{0}{b-a}=0$$
 
+
+>[!NOTE] Teorema de taylor con  residuo
+>Sea $x$ y $x_0$ numeros reales y $f(x)$ $k$ veces diferenciable en $[x, x_0]$ entonces existe un numero c entre $x$ y $x_0$ tal que:
+> ![[Pasted image 20220917215006.png]]
+
+Basicamente estamos aproximando la funcion $f(x)$  en torno al punto $x_0$ a partir de ciertos polinomios usando la llamada serie de taylor centrada en $x_0$.
