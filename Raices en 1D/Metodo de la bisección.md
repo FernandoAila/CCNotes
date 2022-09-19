@@ -1,4 +1,4 @@
-## Metodo de la bisección
+# Metodo de la bisección
 
 Recordar el siguiente teorema de bolzano:
 >[!NOTE] Teorema de bolzano

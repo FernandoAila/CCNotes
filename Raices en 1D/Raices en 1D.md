@@ -21,7 +21,7 @@ Existen muchos metodos para la busqueda de ceros o raices, algunos son:
 - [[Metodo de la bisección]]
 - [[Iteracion de punto fijo]]
 	- [[Metodo de newton]]
--[[Metodo de la secante]]
+- [[Metodo de la secante]]
 
 
 

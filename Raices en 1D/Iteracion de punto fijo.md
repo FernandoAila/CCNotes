@@ -1,4 +1,4 @@
-## Iteracion de punto fijo
+# Iteracion de punto fijo
 
 Ej: Aplicar sucesivamente la funcion cos a un numero cualquiera resulta en que convergerá a un numero especifico.
 $$
@@ -68,8 +68,7 @@ $$g´_1(x)=-\frac{3}{2}$$
 >$$\lim_{i\rightarrow\infty} \frac{e_{i+1}}{e_i}\approx S<1$$
 >Entonces el metodo obedece una convergencia lineal con tasa S
 
-
-
+Es decir, si el S, es decir el cuociente de errores, se va haciendo constante a partir de ciertas iteraciones, y es menor que 1, de dice que posee convergencia lineal.
 Notar que, a primera vista, para calcular el error necesitamos calcular la raiz. Por otro lado, el S es variable para las iteraciones de punto fijo. Naturalmente queremos que el cuociente se vaya reduciendo con el paso de las iteraciones, ya que esto nos diria, que estamos "reduciendo" el error en relacion al paso anterior, y por lo tanto se reducen la cantidad de iteraciones. Por ejemplo, el metodo de la biseccion tiene tasa de convergencia $0.5$, ya que el error se reduce a la mitad cada vez que avanzamos en iteraciones (el largo del intervalo se reduce a la mitad).
 Esto quiere decir que la mejor tasa de convergencia posible, es el valor 0.
 
@@ -128,29 +127,3 @@ Lo que significa que el error decrece al menos con el factor $\frac{S+1}{2}$.
 Obteniendo el cociente entre los errores y obteniendo el caso limite: $$\lim_{i\rightarrow\infty}\frac{e_{i+1}}{e_i}=\lim_{i\rightarrow\infty}|g'(c_i)|=|g'(r)|=S$$
 Sin embargo, surge una pregunta, ¿como sabemos que la IPF convergera si no sabemos $r$?, ya que claramente es lo que se quiere buscar. Una idea es conocer la estimacion de S al ejecutar un para de iteraciones de punto fijo. Como $S \approx \frac{e_{i+1}}{e_i}$ y $e_i= |x_i-r|$ , aun necesitariamos saber $r$.
 Otra cosa seria estimar el error $e_i$ como $|x_i-x_{i+1}|$ donde $x_{i+1}$ seria la aproximacion a $r$ y entonces  $S =\frac{e_{i+1}}{e_i}\approx \frac{|x_{i+1}- x_{i+2} |}{x_i-x_{i+1}}$.
-
-
-
-### Teoremas 
->[!NOTE] Definicion: Metodo localmente convergente  
->Un metodo iterativo se dice localmente convergente a $r$ si este converge a $r$ para *initial guesses* suficientemente cercanos a $r$.
-
-Es decir, que una IPF puede diverger si utilizamos una *initial guess* equivocada incluso si $|g'(r)| < 1$.
-
->[!NOTE] Definicion: Teorema del valor intermedio
->Sea $f$ continua en $[a,b]$ entonces $f$ recorre cada valor entre $f(a)$  y $f(b)$. Es decir. si $y$ es un numero entre $f(a),f(b)$ entonces existe un $c$ tal que $f(c) = y$
-
->[!NOTE] Definicion: Teorema de Rolle
->Sea $f$ continua y diferenciable en $[a,b]$ y $f(a) = f(b)$. Entonces existe un $c$  entre $[a,b]$  tal que $f'(c) = 0$.
-
-Analogo al teorema del valor medio donde: $$f'(c) = \frac{f(b)-f(a)}{b-a}=\frac{0}{b-a}=0$$
-
-
->[!NOTE] Teorema de taylor con  residuo
->Sea $x$ y $x_0$ numeros reales y $f(x)$ $k$ veces diferenciable en $[x, x_0]$ entonces existe un numero c entre $x$ y $x_0$ tal que:
-> ![[Pasted image 20220917215006.png]]
-
-Basicamente estamos aproximando la funcion $f(x)$  en torno al vecindario del punto $x_0$ a partir de ciertos polinomios usando la llamada serie de taylor centrada en $x_0$.
-![[Pasted image 20220917220255.png]]
-
-En cadao termino la aproximacion es diferente, por ejemplo, la primera aproximacion seria una constante, luego una recta, despues una parabola, etc. Por ejemplo, estariamos utilizando los primeros 3 terminos de la serie mostrada en la imagen. Y es exacta justo en el punto $x=x_0$ y el error empieza a aumentar a medida que nos alejamos de $x_0$.
