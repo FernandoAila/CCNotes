@@ -15,6 +15,7 @@ Lo cual da origen al **metodo de newton**, o sea una [[Iteracion de punto fijo]]
 
 En general, este metodo converge mucho más rapido que el metodo de la bisección o alguna IPF con convergencia lineal. En particular, se dice que el metodo de newton converge **cuadraticamente**.
 Sin embargo, notar que necesitamos saber la derivada de la funcion.
+## Algoritmo
 Al igual que una IPF, el algoritmo del metodo de newton es el siguiente:
 ![[Pasted image 20220918152152.png]]
 Ejemplo: $f(x)=x^3+x-1$ donde $f'(x)=3x^2+1$: $$\begin{align}
@@ -26,7 +27,7 @@ Cuyos resultados son:
 
 
 Notar que en la tabla, el error ($e_i$) no obedece un comportamiento lineal, por lo que el $S= \frac{e_{i+1}}{e_i}$ no se hace constante, sin embargo el cuociente $\frac{e_{i}}{e_{i-1}^2}$ si que lo es, lo que indica un comportamiento cuadratico, y por lo tanto un algoritmo mucho más rapido.
-
+## Convergencia
 
  >[!NOTE] Convergencia Cuadratica
 >Sea $e_i=|x_i-r|$ el error absoluto del paso i de un metodo iterativo, con $x_i$ como el valor computado y $r$ la raiz real de la funcion.
@@ -71,5 +72,4 @@ Podemos corregir esta situacion, conociendo la multiplicidad de la raiz de la si
  >[!NOTE] Metodo de Newton modificado
 >Si $f$ es una funcion $m+1$ veces continua y diferenciable en $[a,b]$, donde la raiz $r$ tiene una multiplicidad $m$, entonces el metodo de Newton modificado:
 >$$x_{i+1}=x_i-m\frac{f(x_i)}{f'(x_i)}$$ Converge local y cuadraticamente a $r$.
-
 

@@ -127,3 +127,15 @@ Lo que significa que el error decrece al menos con el factor $\frac{S+1}{2}$.
 Obteniendo el cociente entre los errores y obteniendo el caso limite: $$\lim_{i\rightarrow\infty}\frac{e_{i+1}}{e_i}=\lim_{i\rightarrow\infty}|g'(c_i)|=|g'(r)|=S$$
 Sin embargo, surge una pregunta, ¿como sabemos que la IPF convergera si no sabemos $r$?, ya que claramente es lo que se quiere buscar. Una idea es conocer la estimacion de S al ejecutar un para de iteraciones de punto fijo. Como $S \approx \frac{e_{i+1}}{e_i}$ y $e_i= |x_i-r|$ , aun necesitariamos saber $r$.
 Otra cosa seria estimar el error $e_i$ como $|x_i-x_{i+1}|$ donde $x_{i+1}$ seria la aproximacion a $r$ y entonces  $S =\frac{e_{i+1}}{e_i}\approx \frac{|x_{i+1}- x_{i+2} |}{x_i-x_{i+1}}$.
+
+Queda la pregunta , como podemos transformar una IPF divergente en una convergente?
+Sea entonces una nueva IPF, $G(x)=x+a(x-g(x))$ . Lo primero es que queremos que la nueva IPF tenga el mismo punto fijo que la original.
+Evaluando en $r$ , $G(r)=r+a(r-g(r))=r+a(r-r)= r$. Ahora queremos que esta converja, por lo que derivando y evaluando en el punto fijo $r$ $$\begin{align} 
+G'(x)&=1+x-ag'(x)\\
+G'(r)&=1+a-ag'(r)
+\end{align}$$
+Por lo que queremos que $|1+a-ag'(r)|<1$ , y además de ser posible que sea igual a 0, luego despejando $a$:$$\begin{align}
+1+a(1-g'(r))&=0\\
+a&=\frac{-1}{1-g'(r)}\
+\end{align}$$
+Si bien aún necesitamos el punto fijo, podemos realizar una "aproximacion" de esta.

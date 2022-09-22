@@ -82,7 +82,7 @@ $$
 
 Lo que corresponde simplemente como a una combinacion lineal de las columnas de $A$ ponderadas por los coeficientes de $u$, expresion bastante util para que sea algoritmizable.
 
-La generalizacion del productor matriz-vector es el producto matriz-matriz. Considerar las matrices $A\in\mathbb{R^{m\times n}}$ y $B\in\mathbb{R^{m\times l}}$, entocnes su producto es:
+La generalizacion del productor matriz-vector es el producto matriz-matriz. Considerar las matrices $A\in\mathbb{R^{m\times n}}$ y $B\in\mathbb{R^{m\times l}}$, entonces su producto es:
 ![[Pasted image 20220822152658.png]]
 
-En particular, podemos computar la matriz C, computando cada uno de sus vectores columna $c_i$ de la forma
+Donde C es calculada computando cada uno de sus vectores columna $c_i$ de la forma $c_i=Ab_i$, o sea el producto matrix-vector  de A y $b_i$.

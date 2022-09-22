@@ -11,7 +11,7 @@ La regla del redondeo dice que tenemos que sumar 1 al bit 52, por lo tanto:
 
 Claramente del resultado vemos que lo obtenido no es lo mismo que lo teoríco, dado que se tuvo que aplicar la regla del redondeo.
 
-Estos casos de perdidad de significancia pueden ocurrir por diferentes motivos:
+Estos casos de perdida de significancia pueden ocurrir por diferentes motivos:
 #### Números con ordenes de magnitud muy diferentes
 Por ejemplo, supongamos que queremos sumar los numeros $m_1 = 1$,$m_2=2^{-55}$ y $m_3=-1$ ![[Pasted image 20220828160801.png]]
 
