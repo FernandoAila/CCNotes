@@ -1,5 +1,5 @@
 ### Diagrama Cobweb
-Iterpretacion grafica de la iteracion de punto fijo.
+Interpretacion grafica de la iteracion de punto fijo.
 
 Para esto sea la siguiente funcion $g_1(x)= -\frac{3}{2}x+\frac{5}{2}$, con *initial guess* $x_0=1.1$ y 20 iteraciones. Una forma de ver el comportamiento es calcular las 20 iteraciones y ver los numeros se "acercan" a un valor.![[Pasted image 20220902214403.png]]
 
