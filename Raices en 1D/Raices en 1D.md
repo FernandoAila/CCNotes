@@ -57,3 +57,4 @@ Volviendo al polinomio de Wilkinson, analizando el 15avo termino:
 ![[Pasted image 20220920032250.png]]
 ![[Pasted image 20220920032320.png]]
 
+![[Pasted image 20220928000930.png]]

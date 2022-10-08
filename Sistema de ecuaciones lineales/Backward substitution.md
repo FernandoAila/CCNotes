@@ -42,4 +42,4 @@ A partir de esto podemos contar la cantidad de operaciones elementales: $$\begin
 &=n^2
 
 \end{align}$$
-Por lo que backward substitution toma $n^2$ operaciones elementales.
+Por lo que backward substitution toma $n^2$ operaciones elementales.``

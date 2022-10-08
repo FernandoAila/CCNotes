@@ -15,3 +15,7 @@ Un subespacio vectorial $H$ de un espacio vectorial $V$ es un sub-conjunto de V 
 Por ejemplo, un plano definido en $\mathbb{R}^3$, que pasa por el origen y que es generado por la [[Combinacion lineal]] de vectores $〈0, 1, 1〉$ y $〈1, 0, 1〉$, es decir $a(0,1,1)$ y $b(1,0,1)$.
 De hecho, se define el *span* como el conjunto de vectores generados por una combinacion lineal.
 
+
+
+
+

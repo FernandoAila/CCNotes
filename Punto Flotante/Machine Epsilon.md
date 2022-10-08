@@ -1,6 +1,6 @@
 # Machine Epsilon
 
-El numero machine epsilon $\epsilon_{mach}$  se define la distancia entre 1 y el menor numero representable, como, $2^{-52}$ en el formato double. 
+El numero machine epsilon $\epsilon_{mach}$  se define la distancia entre 1 y el menor numero representable, como, $2^{-52},\approx2*10^{-16}$ en el formato double. 
 
 Que es lo que ocurre cuando queremos representar un numero $x$ entre 1 y $\epsilon_{mach}$? ![[Pasted image 20220824103823.png]]
 
