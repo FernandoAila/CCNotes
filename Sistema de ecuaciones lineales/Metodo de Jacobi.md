@@ -33,3 +33,12 @@ x_{n+1}&=D^{-1}(b-(L+ U)x_n)
 Esta expresion puede ser escrita de diferentes maneras:
 ![[Pasted image 20221007232322.png]]
 
+Donde $r_n$ es el vector residual de la ecuacion $b-Ax_n=r_n$ en la n-esima iteracion. Esto nos dice que la matriz $D^{-1}$ ajusta al residuo $r_n$ a medida que realizamos la IPF. Notar que si $r_n=0\rightarrow b=Ax_n$ y entonces $x=x_n$ por lo que encontramos nuestro resultado.
+
+
+La segunda opcion es realizar el mismo procedimiento pero dejando $x_{n+1}=Mx_n+\hat{b}$ es decir:
+
+![[Pasted image 20221020220441.png]]
+
+Donde $-D^{-1}(L+U) = M$ y $D^{-1}B=\hat{b}$ .
+Esta opcion tiene utilidad al revisar la [[Convergencia de metodos iterativos]].

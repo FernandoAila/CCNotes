@@ -9,3 +9,7 @@ Los metodos iterativos aparecen como una alternativa a costa de entregar una sol
 En particular, para resolver sistemas de ecuaciones lineales, tenemos varias, por ejemplo:
 - [[Metodo de Jacobi]]
 - [[Metodo de Gauss Seidel]]
+Ambos provienen de la misma deduccion a partir de la factorizacion $L+D+U =A$. Donde $L$ es una matriz triangular inferior, $D$ una diagonal y $U$ una triangular superior.
+Esto se puede resumir como:
+![[Pasted image 20221022182408.png]]
+Ambos metodos poseen la misma [[Convergencia de metodos iterativos|Convergencia]].
