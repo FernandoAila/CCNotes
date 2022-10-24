@@ -36,3 +36,4 @@ El siguiente teorema muestra la unicidad de la interpolacion polinomial:
 Notar que si tenemos un  $x_i$ repetido, ya no estamos buscando una funcion, por lo que la teoria de interpolacion polinomial no aplica.
 Utilizando lo anterior, una forma natural de encontrar el polinomio es utilizando la [[Matriz de Vandermonde]], pero no es recomendable su uso para una cantidad de puntos alta. Para estos casos podemos utilizar:
 - [[Interpolación de Lagrange]]
+- [[Interpolación Baricentrica]]
