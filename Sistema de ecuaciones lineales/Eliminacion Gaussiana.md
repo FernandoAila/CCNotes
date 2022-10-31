@@ -10,7 +10,8 @@ $$\begin{align}
 El cual se puede re-escribir en el siguiente tableau o matriz ampliada, donde se acoplan los coeficientes de la matriz $A$ y los del lador derecho del sistema de ecuaciones:
 ![[Pasted image 20220922012302.png]]
 
-Queremos que el coeficiente $a_2$ sea 0, por lo que restamos la primera fila ponderada por $\frac{a_2}{a_1}$, es decir:$$\begin{bmatrix}  
+Queremos que el coeficiente $a_2$ sea 0, por lo que restamos la primera fila ponderada por $\frac{a_2}{a_1}$, es decir:
+$$\begin{bmatrix}  
 a_1 & b_1 & \vdots & c_1 \\  
 a_2 -\frac{a_2}{a_1}a_1 & b_2 - \frac{a_2}{a_1}b_1& \vdots &  c_2- \frac{a_2}{a_1} c_1
 \end{bmatrix}

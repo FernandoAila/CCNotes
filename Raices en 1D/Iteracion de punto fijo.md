@@ -25,7 +25,8 @@ Notar que r, **NO** denota raiz
 Para el caso del coseno esta es:
 $$
 x_{i+1}=\cos x_i 
-$$ Donde $g(x)= \cos x$.
+$$
+Donde $g(x)= \cos x$.
 
 Notar que podemos interpretar esta iteracion de punto fijo, como la busqueda de ceros cuando $f(x)=  x-\cos x$ ("restar" $\cos x_i$ a ambos lados). Ya que si $r$ es un punto fijo de $g(x)$, significa que $g(r) = r$, por lo que $f(r)=r - cos(r)$. pero sabemos que $\cos r = r$  por lo que $f(r)=r-r=0$, o sea una raiz!
 

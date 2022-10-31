@@ -15,7 +15,8 @@ Sea el siguiente sistema de ecuaciones lineales:
 $$\begin{align}
 Ax=b
 \end{align}$$
-Tomando la factorizacion anterior:$$\begin{align}
+Tomando la factorizacion anterior:
+$$\begin{align}
 (L+D+U)(x)&=b\\
 Lx+Dx+Ux&=b\\
 Dx&=b-Lx-Ux\\

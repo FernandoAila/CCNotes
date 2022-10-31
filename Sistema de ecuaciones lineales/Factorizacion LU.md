@@ -49,7 +49,8 @@ c & 1
 1 & 0 \\  
 0 & 1 
 \end{bmatrix}=I$$
-3. La siguiente ecuacion es cierta: $$\begin{bmatrix}  
+3. La siguiente ecuacion es cierta: 
+$$\begin{bmatrix}  
 1 & 0 & 0\\  
 c_1 & 1  & 0\\
 0 & 0  & 1

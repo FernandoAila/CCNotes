@@ -17,7 +17,8 @@ Notemos que si bien es relativamente sencillo de mostrar, es complicado implemen
 
 ### Regla de cramer
 
-El sistema $2 \times 2$, puede tambien ser calculado con la regla de cramer a partir del despeje hecho en el [[#Metodo de substitucion]], notemos que en el denominador de las 2 variables despejadas se encuentra el determinante de la matrix $A$, mientras que el nominador se encuentra el determinante de matriz construida reemplazando el vector columna donde se encuentran los coeficientes que acompañan a esa variable por el vector $\vec{c}$. Esto corresponde a: $$\begin{align} 
+El sistema $2 \times 2$, puede tambien ser calculado con la regla de cramer a partir del despeje hecho en el [[#Metodo de substitucion]], notemos que en el denominador de las 2 variables despejadas se encuentra el determinante de la matrix $A$, mientras que el nominador se encuentra el determinante de matriz construida reemplazando el vector columna donde se encuentran los coeficientes que acompañan a esa variable por el vector $\vec{c}$. Esto corresponde a:
+$$\begin{align} 
 x=\frac
 {\begin{vmatrix} c_1 & b_1 \\  
 c_2 & b_2 \end{vmatrix}}

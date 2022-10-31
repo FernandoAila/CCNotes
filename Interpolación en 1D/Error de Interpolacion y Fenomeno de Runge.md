@@ -1,6 +1,6 @@
 >[!NOTE] Error de interpolacion
 >Sea $p(x)$ el polinomio interpolador de grado n-1 o menor que ajusta a $n$ puntos $(x_1,y_1),\cdots, (x_n,y_n)$.
->El error de interpolacion es:$$f(x)-p(x)=\frac{(x-x_1)(x-x_2)\cdots(x-x_n)}{n!}f^{(n)}(c)$$
+>El error de interpolacion es:$$|f(x)-p(x)|=\frac{|(x-x_1)(x-x_2)\cdots(x-x_n)|}{n!}|f^{(n)}(c)|$$
 >Donde $c$ es un numero entre el mayor y el menor de los numeros $x_i$
 
 Esta definicion tiene 3 cosas clave:
@@ -16,3 +16,4 @@ Para ejemplificar el problema de los puntos espaciados, considere los siguientes
  Notar como oscila la evaluacion del polinomio entre puntos de interpolacion en los extremos del intervalo. Esta oscilacion aumenta significativamente al aumentar la cantidad de puntos a interpolar. Las oscilaciones no dependen de la data interpolada sino que del uso de los puntos equispaciados en la interpolacion.
  Para reducir este fenomeno y reducir el error de interpolacion es que se utiliza los llamados [[Puntos de Chebyshev]].
 
+#tag1

@@ -4,7 +4,8 @@ La [[Factorizacion LU]] es bastante practica en el sentido en que el lado derech
 Sin embargo, hasta ahora se ha supuesto que siempre existe la factorizacion $LU$ de una matriz, e incluso que esta funciona bien, lo que no siempre es el caso.
 Considerar la matriz $\begin{bmatrix}  0 & 2 \\ 3 & 4 \end{bmatrix}$, esta no tiene una factorizacion $LU$ dado que tiene un 0 en el primer pivote y no existe un numero multiplicado por 0 que haga el 3 se vaya en la segunda fila.
 
-Otra desventaja, es que $LU$ induce grandes errores en la computacion, por ejemplo, considerar $\delta = 10 ^{-20}$, es decir un numero menor a [[Machine Epsilon]].$$
+Otra desventaja, es que $LU$ induce grandes errores en la computacion, por ejemplo, considerar $\delta = 10 ^{-20}$, es decir un numero menor a [[Machine Epsilon]].
+$$
 \begin{bmatrix}  \delta & 1 \\ 1 & 2 \end{bmatrix}\begin{bmatrix}  x_1  \\ x_2 \end{bmatrix}=\begin{bmatrix}  1\\ 4  \end{bmatrix}
 $$
  Cuya factorizacion $A=LU$, es en doble precision: $$\begin{bmatrix}  1 & 0 \\ 10^{20} & 1 \end{bmatrix}\begin{bmatrix}  10^{-20} & 1 \\ 0 & -10^{20} \end{bmatrix}$$

@@ -42,7 +42,9 @@ La primera iteracion es:
 $$\begin{align}
 J(x_0)&= \begin{bmatrix}4 & 2 \\ -2 & 1 \end{bmatrix}\\
 F(x_0)&= \begin{bmatrix}4 \\ -3 \end{bmatrix}
-\end{align}$$Resolviendo por $\delta x$:$$\begin{bmatrix}4 & 2 & -4 \\ 0 & 2 & -5 \end{bmatrix}$$
+\end{align}$$
+Resolviendo por $\delta x$:
+$$\begin{bmatrix}4 & 2 & -4 \\ 0 & 2 & -5 \end{bmatrix}$$
 $$\delta x =\begin{bmatrix}
 \frac{1}{4}\\\frac{-5}{2}
 \end{bmatrix}$$

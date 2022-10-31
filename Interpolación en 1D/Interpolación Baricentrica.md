@@ -10,7 +10,8 @@ Podemos obtener los pesos asociado del denominador de $L_i(x)$ de la siguiente f
 $$w_i=\frac{1}{l_i(x_i)}=\frac{1}{l'(x_i)}$$
 Por lo que los $L_i(x)$ son,$$L_i(x)=\frac{l(x)}{(x-x_i)}w_i$$
 
-Reescribiendo el metodo de Lagrange: $$\begin{align}
+Reescribiendo el metodo de Lagrange: 
+$$\begin{align}
 p(x)&=\sum_{i=1}^n y_iL_i(x)\\
 &=\sum_{i=1}^n y_i\frac{l(x)}{(x-x_i)}w_i\\
 &=l(x)\sum_{i=1}^n y_i\frac{w_i}{(x-x_i)}
@@ -26,11 +27,13 @@ $$\begin{align}
 p(x)&=l(x)\sum_{i=1}^n \frac{w_i}{(x-x_i)}=1
 
 \end{align}$$
-Despejando $l(x)$:$$\begin{align}
+Despejando $l(x)$:
+$$\begin{align}
 l(x)=\frac{1}{\sum\limits_{i=1}^n \frac{w_i}{(x-x_i)}}
 
 \end{align}$$
-Reemplazando en la ecuacion original:$$\begin{align}
+Reemplazando en la ecuacion original:
+$$\begin{align}
 p(x)&=l(x)\sum_{i=1}^n y_i\frac{w_i}{(x-x_i)}\\
 &=\frac{1}{\sum_\limits{i=1}^n \frac{w_i}{(x-x_i)}}\sum_{i=1}^n y_i\frac{w_i}{(x-x_i)}\\
 &=\frac{\sum\limits_{i=1}^n y_i\frac{w_i}{(x-x_i)}}{\sum\limits_{i=1}^n \frac{w_i}{(x-x_i)}}

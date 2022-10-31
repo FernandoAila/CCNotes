@@ -31,7 +31,8 @@ Lo que induce el siguiente algoritmo:
 
 El indice $i$ reprensenta la i-esima ecuacion, mientras que $j$ representa el indice la sumatoria.
 
-A partir de esto podemos contar la cantidad de operaciones elementales: $$\begin{align}
+A partir de esto podemos contar la cantidad de operaciones elementales:
+$$\begin{align}
 \#&=\sum_{i=1}^n(\sum_{j=i+1}^n2+1)\\
 &=\sum_{i=1}^n(\sum_{k=1}^{n-i}2+1)\\
 &=\sum_{i=1}^n 2(n-i)+1\\

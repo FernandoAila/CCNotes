@@ -4,7 +4,8 @@ $$\begin{align}
 &p(x)=y_1L_1(x)+y_2L_2(x)+\cdots+ y_nL_n(x)\\
 &\sum_{i=1}^n y_iL_i(x)
 \end{align}$$
-Donde $L_i(x)$ son funciones donde $L_i(x_i)=1$ y $L_i(x_j)=0$ con $i\neq j$. Esta definicion nos permite obtener $y_k$ cuando evaluamos a si manteniendo la condicion de $p(x_k) = y_k$:$$p(x_k)=y_1\underbrace{L_1(x_k)}_\text{0}+y_2\underbrace{L_2(x_k)}_\text{0}+\cdots+ y_k\underbrace{L_k(x_k)}_\text{1}+\cdots+y_n\underbrace{L_n(x_k)}_\text{0}
+Donde $L_i(x)$ son funciones donde $L_i(x_i)=1$ y $L_i(x_j)=0$ con $i\neq j$. Esta definicion nos permite obtener $y_k$ cuando evaluamos a si manteniendo la condicion de $p(x_k) = y_k$:
+$$p(x_k)=y_1\underbrace{L_1(x_k)}_\text{0}+y_2\underbrace{L_2(x_k)}_\text{0}+\cdots+ y_k\underbrace{L_k(x_k)}_\text{1}+\cdots+y_n\underbrace{L_n(x_k)}_\text{0}
 $$
 Las funciones $L_i(x)$ se contruyen definiendo las funciones $l_i(x)$ de la forma:
 ![[Pasted image 20221022232326.png]]

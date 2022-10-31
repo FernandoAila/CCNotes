@@ -8,7 +8,8 @@ Restando la ecuacion $2$ con la ecuacion $1$:
 ![[Pasted image 20221022182911.png]]
 Si aplicamos cualquier norma vectorial, por ejemplo, la norma 2, obtenemos:
 ![[Pasted image 20221022183041.png]]
-El lado izquierdo corresponde al error $e_{n+1}$  en la n+1 iteracion, por lo que:$$\begin{align}e_{n+1}&=||x_{n+2}-x_{n+1}|| \\ 
+El lado izquierdo corresponde al error $e_{n+1}$  en la n+1 iteracion, por lo que:
+$$\begin{align}e_{n+1}&=||x_{n+2}-x_{n+1}|| \\ 
 
 &\leq ||M|| x_n
 \end{align}$$

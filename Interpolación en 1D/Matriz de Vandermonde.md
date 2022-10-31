@@ -41,7 +41,7 @@ Si extendemos este resultado a n puntos:
 $$\begin{bmatrix}  
 1 & x_1 & x_1^2 & \cdots & x_1^{n-1}  \\  
 1 & x_2 &x_2^2 & \cdots & x_2^{n-1} \\
-1 & x_3 & x_3^2 & \cdots & x_2^{n-1}\\
+1 & x_3 & x_3^2 & \cdots & x_3^{n-1}\\
 \vdots & \vdots & \vdots & \cdots & \vdots\\
 1 & x_n & x_n^2 & \cdots & x_n^{n-1}\\
 \end{bmatrix}
