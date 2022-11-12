@@ -29,7 +29,8 @@ Calcular el gradiente corresponde a:$$\begin{align}
 \frac{\partial E}{\partial a} &=\frac{\partial}{\partial a} \sum_{i=1}^m (y_i-a-bx_i)^2=-\sum_{i=1}^m2(y_i-a-bx_i)\\
 \frac{\partial E}{\partial b} &=\frac{\partial}{\partial b} \sum_{i=1}^m (y_i-a-bx_i)^2=-\sum_{i=1}^m2(y_i-a-bx_i)x_i
 \end{align}$$
-Igualando a 0:$$\begin{align}
+Igualando a 0:
+$$\begin{align}
 
 0=\frac{\partial E}{\partial a} &=-\sum_{i=1}^m2(y_i-\hat{a}-\hat{b}x_i)\\
 &=\sum_{i=1}^m (y_i-\hat{a}-\hat{b}x_i)\\

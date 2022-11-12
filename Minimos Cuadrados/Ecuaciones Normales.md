@@ -36,7 +36,8 @@ Notar que:
 - La matriz $A$ es similar a la [[Matriz de Vandermonde]], sin embargo este caso está truncada en la cantidad de columnas.
 
 
-Si reescribimos la ecuacion matricial en su forma algebraica:$$\begin{align}
+Si reescribimos la ecuacion matricial en su forma algebraica:
+$$\begin{align}
 A\begin{bmatrix}
 a\\
 b
@@ -88,7 +89,12 @@ A^TA\overline{x}=A^T\boldsymbol{\vec{b}}
 \end{align}
 $$
 
-Lo que se conoce como **ecuaciones normales**, lo que no es más que un [[Sistemas de Ecuaciones Lineales|sistema de ecuacion lineal]]. Estas nos dan una formula explicita para el $\overline{x}$:
+Lo que se conoce como **ecuaciones normales**, lo que no es más que un [[Sistemas de Ecuaciones Lineales|sistema de ecuacion lineal]] y que genera una matriz cuadrada.
+
+>[!NOTE] Basicamente estamos multiplicando $A^T$ a ambos lados por la izquierda para generar una matriz cuadrada!
+
+
+Estas nos dan una formula explicita para el $\overline{x}$:
 $$
 \overline{x}=(A^TA)^{-1}A^T\boldsymbol{\vec{b}}
 $$
@@ -176,6 +182,110 @@ Que es exactamente lo mismo que lo visto en [[Minimos Cuadrados por Minimizacion
 
 ## Ejemplo
 
+Sea el siguiente sistema de ecuaciones:
+$$\underbrace{\begin{bmatrix}
+1 & -4 \\
+2 & 3  \\
+2 &2
+\end{bmatrix}}_{A}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
+=
+\underbrace{\begin{bmatrix}
+-3\\
+15\\
+19\\
+\end{bmatrix}}_b
+$$
+Construyendo las ecuaciones normales:
+$$
+\begin{bmatrix}
+1 & 2    & 2 \\ 
+-4 & 3  & 2 
+\end{bmatrix}
+\begin{bmatrix}
+1 & -4 \\
+2 & 3  \\
+2 &2
+\end{bmatrix}
+\begin{bmatrix}
+\overline{x_1} \\ 
+\overline{x_2} 
+\end{bmatrix}
+=
+
+\begin{bmatrix}
+1 & 2    & 2 \\ 
+-4 & 3  & 2 
+\end{bmatrix}
+
+\begin{bmatrix}
+-3 \\ 
+15 \\
+19 \\
+\end{bmatrix}
+$$
+Multiplicando:
+$$
+\begin{bmatrix}
+9 & 6    \\ 
+6 & 29  
+\end{bmatrix}
+
+\begin{bmatrix}
+\overline{x_1} \\ 
+\overline{x_2} 
+\end{bmatrix}
+=
 
 
 
+\begin{bmatrix}
+45 \\ 
+75 \\
+
+\end{bmatrix}
+$$
+Resolviendo el sistema de ecuaciones $2\times 2$:
+$$\begin{align}
+\overline{x_1}=3.8\\
+\overline{x_2}=1.8
+\end{align}$$
+Ademas podemos obtener el vector residual $\vec{r}=\boldsymbol{\vec{b}}-A\overline{x}$:
+$$
+\vec{r}=
+\begin{bmatrix}
+-3 \\ 
+15 \\
+19 \\
+\end{bmatrix}
+-
+\begin{bmatrix}
+1 & -4 \\
+2 & 3  \\
+2 &2
+\end{bmatrix}
+\begin{bmatrix}
+3.8 \\ 
+1.8
+\end{bmatrix}
+=
+\begin{bmatrix}
+0.4 \\ 
+2\\
+-2.2
+\end{bmatrix}
+
+$$
+Por lo que el minimo valor para el error cuadratico es: 
+$$||r|||^2_2=(0.4)^2+2^2+(-2.2)^2=9$$
+
+
+## La matriz $A{^T}A$
+
+La matriz $A^{T}A$ o en su componente complejo, $A^*A$, donde $A^*$ es la [[Matriz Adjoint]] de $A$, tiene una serie de propiedades:
+
+- Si $B=A^*A$,  y $B^*=(A^*A)^*=A^*(A^*)^*=A^*A=B$ , entonces $B$ es una **Matriz Hermitiana** 
+ 

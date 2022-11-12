@@ -49,6 +49,9 @@ $$y_i=\hat{y}+\epsilon_i \quad i\in 1,2,3,\cdots,m$$
 Donde $y_i$ es el dato que tenemos acceso, $\hat{y}$ el dato que queremos recuperar y no tenemos acceso y $e_i$ el error de la obtencion del dato el cual tampoco tenemos acceso.
 
 Por lo tanto el objetivo, es construir una aproximacion a estos datos tal que minimize un error (el error cuadratico), lo que implica reducir, el tamaño de las lineas azules en la gráfica que van desde el dato real hasta la curva que aproxima.
-Para esto tenemos 2 alternativas:
-- [[Minimos Cuadrados por Minimizacion| Minimos cuadrados por minimizacion]].
-- [[Minimos cuadrados desde el algebra lineal]]
+Para esto tenemos 2 alternativas equivalentes entre si:
+- [[Minimos Cuadrados por Minimizacion|Minimos cuadrados por minimizacion]].
+- [[Ecuaciones Normales]]
+O usar la [[Factorizacion QR]]
+
+Podemos aplicar minimos cuadrados en distintos [[Tipos de modelos]], como lineal, cuadratico, exponencial, etc.

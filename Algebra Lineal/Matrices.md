@@ -92,10 +92,4 @@ El determinante de una matriz se obtiene recursivamente de la siguiente forma:
 
 ![[Pasted image 20221001003224.png]]
 
-### Valores y vectores propios
-Sea $A$ una matriz cuadrada y $v$ en $\mathbb{R}^n$ con $v\neq 0$. Si $A$, $V$ y $\lambda$  satisfacen:
-$$Av=\lambda v$$
-Entonces se dice que $\lambda$ es un valor propio de $A$ y $v$ es un vector propio de $A$.
-Se le llama el polinomio caracteristico de $A$, al determinante $||A-\lambda I||$ y la ecuacion caracteristica $||A-\lambda I||= 0$.
-
-Si la matriz $A$ es invertible y tiene valores propios $\lambda_i$ entonces los valores propios de $A^{-1}$ son $\frac{1}{\lambda_i}$, y los vectores son los mismos. 
+[[Valores y vectores propios]]

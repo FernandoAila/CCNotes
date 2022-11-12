@@ -2,7 +2,16 @@ Se dice que una [[Matrices|matriz]] $A$ en un [[Sistemas de Ecuaciones Lineales]
 
 El numero de  condicion $\kappa$ es calculado como:
 $$\kappa = ||A||_\infty ||A^{-1}||_\infty $$
+
+O, 
+$$
+\kappa = \frac{\sigma_{max}}{\sigma_{min}}
+$$
+Donde $\sigma$ es un valor propio de la matriz $A$.
+
 Donde la norma infinito $||||_\infty$ es calculada como el maximo de la suma de las filas de $A$.
 
 Como norma general, el logaritmo en base 10, del numero de condicion, nos entrega la cantidad de decimales perdidos de precision, es decir:
-$$log(\kappa)=\# \text{ cantidad de decimales perdidos}$$.
+$$log(\kappa)=\# \text{ cantidad de decimales perdidos}$$
+
+De la misma forma, 

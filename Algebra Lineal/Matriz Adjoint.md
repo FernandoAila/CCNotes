@@ -18,3 +18,11 @@ $$
 Es decir, donde el operador conjugado cambia el signo de la parte imaginaria del numero complejo, $z = a+ib\rightarrow \overline{z} = a-ib$.
 Si se trabaja con matrices reales, entonces se tiene que $A^T=A^*$.
 Una propiedad importante es que $(AB)^*=B^*A^*$, de la misma forma que la transpuesta.
+
+## Matriz Hermitiana
+
+Se dice que $A$ es una matriz hermitiana si $A^*=A$. Esta las siguientes propiedades:
+
+- Los valores de la diagonal principal son reales
+- Sus valores propios tambien son reales.
+- Sus vectores propios son ortogonales
