@@ -9,3 +9,4 @@ x(0)&= x_0\\
 y(0)&= y_0
 \end{align*}
 $$
+![[Pasted image 20221127233831.png]]
