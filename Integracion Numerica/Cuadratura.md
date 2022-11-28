@@ -29,8 +29,13 @@ Algunos metodos son:
 - [[Suma de Riemann]]
 - [[Regla del Punto Medio]]
 - [[Regla del Trapecio]]
+- [[Regla de Simpson]]
+- [[Cuadratura Gaussiana]]
 
 
 
 
 
+
+>[!NOTE] Grado de exactitud
+>Una regla de cuadratura $\sum_{i=1}^n w_if(x_i)$ tiene grado de exactitud $m$ si entrega el resultado exacto cuando la funcion $f(x)$ es cualquier polinomio de grado no mayor a "$m$" y no es exacta para todos los polinomios de grado mayor.

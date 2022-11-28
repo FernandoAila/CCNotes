@@ -9,11 +9,20 @@ $$
 $$
 Notar que necesitamos una cantidad par de sub-intervalos, por lo que debe satisfacer la relación $m=2n$
 Por lo que si lo expandimos al intervalo $[a=x_0,b=x_m]$:
-$$\int_{a}^{b}f(x)dx=\frac{h}{3}\left(f(x_0)+4 \sum\limits_{i=1}^{n}f(x_{2i-1}+2 \sum\limits_{i=1}^{n-1}f(x_{2i})+f(x_m) \right)- (b-a)\frac{h^4}{180}f^{4}(c)$$
+$$\int_{a}^{b}f(x)dx=\frac{h}{3}\left(f(x_0)+4 \sum\limits_{i=1}^{n}f(x_{2i-1})+2 \sum\limits_{i=1}^{n-1}f(x_{2i})+f(x_m) \right)- (b-a)\frac{h^4}{180}f^{4}(c)$$
 donde $h=(b-a)/m$.
 
+Escrito el metodo como producto punto es:
+$$
+\int_{a}^{b}f(x)dx=<\vec{f(x)},\vec{h}>
+$$
+Donde $\vec{f(x)}=[f(x_0),4f(x_1),2f(x_2),4f(x_3),2f(x_4),\cdots, 4f(x_{2i-1}),2f(x_{2i}), \cdots ,f(x_m)]$
+y $\vec{h}=[\frac{h}{3},\frac{h}{3},\frac{h}{3},\cdots,\frac{h}{3}]$
 Notar que todos los metodos planteados poseen la misma forma,  el producto punto de un vector de pesos y un vector de puntos evaluado en la funcion $f(x)$.
-Por otro lado, $f^4(c)$ posee la caracteristica de que hace que el error sea 0 para una familia de funciones como una funcion constante y polinomios de grado 1,2,3 . Sin embargo requerimos que esta esté acotada
+Por otro lado, $f^4(c)$ posee la caracteristica de que hace que el error sea 0 para una familia de funciones como una funcion constante y polinomios de grado 1,2,3 . Sin embargo requerimos que esta esté acotada.
+
+
+
 
 ![[Pasted image 20221124145810.png]]
 

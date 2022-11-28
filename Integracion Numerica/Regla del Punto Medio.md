@@ -15,9 +15,22 @@ donde $h=x_1-x_0$ y $c \in [x_{0} , x_1]$.
 Si llevamos esta idea al intervalo $[a=x_{1}, b=x_{m}]$:
 $$\begin{align*}
 \int_{a}^{b} f(x)dx &= \sum\limits_{i=1}^{m}\int_{x_{i-1}}^{x_{i}}f(x)\\\\
-&=\sum\limits_{i=1}^{m}hf(x_{*_i})+\frac{b-a}{24}h^{2}f^{´ ´}(c)
+&=\sum\limits_{i=1}^{m}hf(\frac{x_{i}+x_{i-1}}{2})+\frac{b-a}{24}h^{2}f^{´ ´}(c)
 \end{align*}$$
-donde $h=(b-a)/m$ , $x_{*_{i}}=\frac{x_{i}-x_{i-1}}{2}$.
+donde $h=(b-a)/m$  y $m$ el numero de sub-intervalos
+
+
+
+
+
+
+Escrito el metodo como producto punto es:
+$$
+\int_{a}^{b}f(x)dx=<\vec{f(x)},\vec{h}>
+$$
+Donde $\vec{f(x)}=[f(x_{*0}),f(x_{*1}),f(x_{*2}),f(x_{*3}),f(x_{*4}),\cdots, f(x_{*i})\cdots ,f(x_{*m})]$
+y $\vec{h}=[h,h,h,\cdots,h]$
+Notar que todos los metodos planteados poseen la misma forma,  el producto punto de un vector de pesos y un vector de puntos evaluado en la funcion $f(x)$.
 
 Notar que si conocemos la segunda derivada de la función podemos acotarla buscando el peor caso.
 Luego, lo unico que dominaria el error es el termino $h^2$ lo dice que si el $h$ disminuye a la mitad, el error disminuye cuatro veces, si $h$ disminuye 4 veces el error disminuye 16 veces
