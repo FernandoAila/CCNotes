@@ -63,4 +63,5 @@ y(t)=
 1-\frac{1}{1+\frac{y_0}{1-y_0}exp(ct)  } \quad \text{e.o.c} \\
      \end{cases}
 $$
-Una derivación inicial de distintos algoritmos de IVP es utilizando el [[Metodo de Euler]], la segunda nace del mismo algoritmo y se llama [[Backward Euler]] 
+Una derivación inicial de distintos algoritmos de IVP es utilizando el [[Metodo de Euler]], la segunda nace del mismo algoritmo y se llama [[Backward Euler]].
+Por otro lado los metodos [[Runge-Kutta 2 (RK2)]] y [[RK4]] suelen entregar mejores resultados ya que poseen un orden de convergencia mayor.

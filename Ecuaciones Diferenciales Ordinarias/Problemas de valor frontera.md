@@ -1,0 +1,1 @@
+Los problemas de valor frontera o BVP se caracterizan por que no dependen del tiempo $t$ sino que de una variable espacial $x$. Por ejemplo, $y^"(x)=0$ para $x\in ]0,1[$ , $y(0)=c_1$ y $y(1)=c_2$. 
