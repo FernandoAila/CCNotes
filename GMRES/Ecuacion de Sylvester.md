@@ -73,7 +73,7 @@ Lo que lo podemos reescribir en un sistema de ecuaciones!
 
 ![[Pasted image 20221128155024.png]]
 
-Ahora el desafio es realizar [[GMRes]] sin construir la matriz $A$ presentada ya que es de dimensión $n\times n$, por lo que requiere mucha memoria para ser almacenada.
+Ahora el desafio es realizar [[GMRes]] sin construir la matriz $A$ presentada ya que es de dimensión $n^2\times n^{2}$, por lo que requiere mucha memoria para ser almacenada.
 Por esta razon definimos la función $afun$ en el algoritmo de [[GMRes]], cuya funcion radica en recibir un vector y retornar el producto matriz-vector.
 
 ![[Pasted image 20221128161419.png]]

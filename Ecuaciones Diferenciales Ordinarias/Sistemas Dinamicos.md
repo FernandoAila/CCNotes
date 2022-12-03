@@ -96,3 +96,67 @@ F(t)=\begin{bmatrix}y_2\\
 \end{align*}
 $$
 
+# Ejemplo
+
+Sea la ecuacion:
+$$
+y^{''}(x)+2y'(x)+3y=0
+$$
+con:
+$$
+\begin{align*}
+y(1)=1\\
+y^{'}(1)=0
+\end{align*}
+$$
+Para llevar la ecuacion a un IVP normal, realizamos el siguiente cambio de variable:
+$$
+\begin{align*}
+g_1=y\\
+g_2=y^{'}
+\end{align*}
+$$
+Derivando:
+$$
+\begin{align*}
+g_1^{'}&=y=y_2\\
+g_2^{'}&=y^{''}=-2y^{'}+3y=-2y_2-3y_1
+\end{align*}
+$$
+Por lo que:
+$$
+\begin{align*}
+g_1(0)&=1\\\
+g_2(0)&=0
+\end{align*}
+$$
+Por lo que en su forma matricial:
+$$
+\begin{align*}
+\vec{y}&=\begin{pmatrix}g_1 \\ g_2\end{pmatrix}\\
+\vec{y}^{'}&=\begin{pmatrix}g_1^{'}\\
+g_2^{'}\end{pmatrix}=F(g_1,g_2)=\begin{pmatrix}g_2\\
+-2g_2-3g_1\end{pmatrix}
+\end{align*}
+$$
+El [[Metodo de Euler]] dice que:
+$$
+y_{i+1}=y_i+F(y_i)h
+$$
+Si definimos:
+$$
+y_0=\begin{pmatrix} 1 \\0 \end{pmatrix}
+$$
+y 
+$$
+F(y)=\begin{pmatrix} g_2\\-2g_2-3g_1 \end{pmatrix}
+$$Luego, con un step de $0.1$:
+$$
+\begin{align*}
+y_{1}&= \begin{pmatrix} 1 \\0 \end{pmatrix}+ F(\begin{pmatrix} 0 \\1 \end{pmatrix})0.1\\
+&=\begin{pmatrix} 1 \\0 \end{pmatrix} + \begin{pmatrix} 0 \\-3 \end{pmatrix}0.1\\
+&=\begin{pmatrix}0.1\\
+-0.3\end{pmatrix}
+\end{align*}
+$$
+Seguir hasta llegar al fin del intervalo.

@@ -211,3 +211,46 @@ La linea 12 se encarga de resolver el problema de minimos quadrados una y otra v
 Puede ser el caso de que el coeficiente $h_{k+1k}$ sea $0$, a este caso se le denomina GMRES **Breakdown**, esto significa que al tener este coeficiente igual a 0, el problema de minimizacion se puede resolver exactamente ya que se convierte en un sistema de dimension $(k+1)\times k$ a un sistema de ecuaciones lineales cuadrado, $k\times k$, es decir, resolvimos exactamente el problema original. En terminos formales significa que el residuo es $\tilde{c}_k=arg\min||\lVert b \rVert e_1-\hat{H}_kc_k|||_2^2=0$.
 
 ![[Pasted image 20221112044453.png]]
+
+
+TLDR:
+Por el teorema de Caylee hamilton vimos que:
+$$p(\lambda)=det(\lambda I  - A)=0$$
+Si queriamos resolver $A\vec{x}=b$ dimos que:
+$$
+\vec{x}=\sum_{i=1}^n \tilde{c_i}A^{i-1}b
+$$
+Es decir podiamos encontrar $x$ a partir de una combinacion lineal de los vectores, $b,Ab,A^{2}b,A^{3}b,\cdots$.
+Esta combinacion lineal genera un subespacio $\mathcal{K}_k=span(b,Ab,A^{2}b,A^{3}b,\cdots, A^{k}b)$ que toma los primeros $k$ vectores.
+
+Si $x_k$ es decir el resultado de $Ax=b$ usando $k$ vectores está en el espacio de krylov de k vectores significa que:
+
+$$
+x_k = \tilde{c_1}b+\tilde{c_2}Ab+\tilde{c_3}A^2b+\cdots+\tilde{c_{k}}A^{(k-1)}b
+$$
+Lo que escrito en forma matricial:
+
+$$
+x_k=
+\begin{bmatrix}
+b & Ab& A^2b&\cdots &A^{k-1}
+
+\end{bmatrix}
+
+\begin{bmatrix}
+\tilde{c_1}\\
+\tilde{c_2}\\
+\tilde{c_3}\\
+\vdots\\
+\tilde{c_k}
+
+\end{bmatrix}
+$$
+Si hacemos $x=x_k$:
+$$AK_k \tilde{c}_k=b$$
+A es $n\times n$, $K_{k}$ es $n \times k$ ,  $c_{k}$ es de dimension $k$ y $b$ es de dimension $n$.
+Es decir tenemos más ecuaciones que incognitas por lo q tenemos que realizar [[Minimos  Cuadrados]].
+$$
+\tilde{c}_k=arg\min||b-AK_k\tilde{c}_k||_2^2
+$$
+Eso si los vectores que conforman el espacio de Krylov se parecen mucho entre sí por lo que hay que ortonormalizarlos.
